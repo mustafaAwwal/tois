@@ -1,0 +1,29 @@
+$primary-color: #8c1e21;
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+}
+.heading {
+    color: $primary-color;
+    font-size: 2rem;
+}
+.checkbox-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+    .checkbox-item {
+        padding: 0px 20px 0px 0px;
+    }
+}
+.redLine {
+    border: 1px solid #8c1e21;
+}
+#submit-button {
+    margin-top: 20px;
+    padding: 5px 30px;
+    border-radius: 30px;
+}
+mat-radio-button {
+    margin-right: 20px;
+}

@@ -1,0 +1,19 @@
+<div class="flex-container">
+    <div class="inner-flex">
+        <div *ngFor = "let question of questions; let i = index" >
+            <div class="question-wrapper" [ngClass]="currentQuestion.data == question.data ? 'show': 'hidden'">
+                <app-question [question]="question.data" (results)="resultUpdate($event)"></app-question>
+            </div>
+        </div>
+        <!-- <div class="arrow-container">
+            <div class="arrow-item" (click)="previous()">
+                <img src="../../../../../assets/left.svg" alt="" *ngIf="showIndex !== 0">
+            </div>
+            <div class="arrow-item" (click)="next()">
+                <img src="../../../../../assets/right.svg" alt="" *ngIf="(questions.length - 1) !== showIndex">
+            </div>
+        </div> -->
+    </div>
+    
+
+</div>

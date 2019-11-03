@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    color: #8c1e21;
+    height: 100vh;
+}
+.heading{
+text-align: center;
+}
+.button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    button {
+        padding: 5px 50px;
+        border-radius: 50px;
+    }
+}

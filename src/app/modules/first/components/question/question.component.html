@@ -1,0 +1,17 @@
+<div class="flex-container">
+    <div>
+        <h2 class="heading">
+            {{questionShow}}
+        </h2>
+        <form [formGroup]="questionForm" (ngSubmit)="submitAnswer(questionForm.value)">
+            <mat-radio-group aria-label="Select an option" color="primary" formControlName="yes">
+                <mat-radio-button value="true">Yes</mat-radio-button>
+                <mat-radio-button value="false">No</mat-radio-button>
+            </mat-radio-group>
+            <hr class="redLine">
+            <button type="submit" color="primary" [disabled]="questionForm.invalid" id="submit-button" mat-raised-button>
+                Submiy Your Answer
+            </button>
+        </form>
+    </div>
+</div>

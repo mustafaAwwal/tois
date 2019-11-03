@@ -1,0 +1,22 @@
+.flex-container {
+    height: 100vh;
+    background: url("../../../../../assets/welcomescreen.svg");
+    background-size: cover;
+    padding: 50px 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+.text-area {
+    h1 {
+        font-size: 5rem;
+        color: #8c1e21;
+    }
+    .bigger {
+        font-size: 6rem;
+    }
+    #test-button {
+        border-radius: 50px;
+        padding: 5px 50px;
+    }
+}
